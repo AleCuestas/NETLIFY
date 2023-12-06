@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: #f1f5fe;
+}
+.bg-gradient {  
+    background: linear-gradient(to right, #606c88, #3f4c6b) !important;
+}
+
+
+html, body {
+    height: 100%;
+    background-color: #FFA3F8;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-image: url("./assets/img/morado.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    height: 130px;
+    margin-bottom: 10px;
+}
+
+.body {
+    background-color: rgb(223, 139, 223);
+    background: rgba(223,139,233,0.1);
+    width: 100%;
+    max-width: 330px;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+.form-floating {
+    text-align: start;
+}
+
+.errorLabel {
+    margin-left: 5px;
+}

@@ -1,0 +1,122 @@
+<!-- <h2 class="text-center">Componente SHOW</h2> -->
+<div class="container">
+  <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+    </a>
+    <div class="col-md-3 text-center">
+      <button type="button" class="btn btn-outline-primary me-2" (click)="logOut()">LogOut</button>   
+    </div>
+    </header>
+  <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+    <h1>EXAMEN FINAL </h1>
+    <h1>
+      <font size=7> 
+          <font face = "Comic Sans MS, arial,verdana">
+            <font color="#E887FB"> 
+              PAOLA ALEJANDRA CUESTAS VIDAURRE 
+            </font>
+          </font>
+          
+      </font>
+  </h1> 
+     <img class="logo" src="../../../assets/img/candidato.png" alt="Login">
+      <h1 class="display-4 fw-normal">Bienvenido!</h1>
+
+  </div>
+     </div>
+
+
+
+
+
+<div class="d-grid gap-2 mt-4">
+    <a routerLink="/create" class="btn btn-primary" type="button">Create</a>    
+</div>
+
+<table class="table table-hover table-striped">
+    <thead class="bg-gradient text-white">
+      <tr>        
+        <th>Title</th>
+        <th>Content</th>
+        <th>Author</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let post of Posts">        
+        <td>{{ post.title }}</td>
+        <td>{{ post.content }}</td>
+        <td>{{ post.author }}</td>
+        <td>          
+          <button routerLink="/edit/{{post.id}}" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+          <button (click)="deleteRecord(post)" class="btn btn-outline-danger"><i class="fa-solid fa-trash"></i></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+      
+       
+      <main>
+        <section id="about">
+          <h2>LAB1</h2>
+          <pre>
+              <code>
+                 <img class ="xdd" src = "../../../assets/img/lab1.png" > 
+        </code>
+        </pre>
+        
+      </section>
+    </main>
+
+    <main>
+      <section id="about">
+        <h2>LAB2</h2>
+        <pre>
+            <code>
+              <img class ="xdd" src = "../../../assets/img/lab2.png" > 
+            </code>
+           </pre>
+
+           
+        </section>
+      </main>
+
+      <main>
+        <section id="about">
+          <h2>LAB3</h2>
+          <pre>
+              <code>
+                <img class ="xdd" src = "../../../assets/img/lab3.png" > 
+              </code>
+             </pre>
+
+          </section>
+        </main>
+      
+        <main>
+          <section id="about">
+            <h2>LAB4</h2>
+            <pre>
+                <code>
+                  <img class ="xdd" src = "../../../assets/img/lab4.png" > 
+                </code>
+               </pre>
+
+             
+            </section>
+          </main>
+             
+          <main>
+            <section id="about">
+              <h2>LAB5</h2>
+              <pre>
+                  <code>
+                    <img class ="xdd" src = "../../../assets/img/lab5.png" > 
+                  </code>
+                 </pre>
+
+                
+              </section>
+            </main>
+  
